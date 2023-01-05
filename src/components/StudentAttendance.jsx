@@ -5,10 +5,10 @@ function StudentAttendance() {
   const [students, setStudents] = useState([]);
   const [studentsPresent, setStudentsPresent] = useState(0);
   const len= students.length > 0;
-  // This useEffect hook will run whenever the component mounts
-  // or whenever the students array is updated.
+  
+  
   useEffect(() => {
-    // Calculate the number of students present in the school
+ 
     const studentsPresent = students.filter(s => !s.checkoutTime).length;
 
     console.log(`There are ${studentsPresent} students present in the school.`);
